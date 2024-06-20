@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Рекомендации</title>
+    <link rel="stylesheet" href="stylesrc.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Recommendation</h1>
+        <div class="recommendations">
+            <div class="recommendation">
+                <h2>Recommendation 1</h2>
+                <p>You need to rest from time to time.</p>
+            </div>
+            <div class="recommendation">
+                <h2>Recommendation 2</h2>
+                <p>Don't play dota.</p>
+            </div>
+            <div class="recommendation">
+                <h2>Recommendation 3</h2>
+                <p>Go outside at least once in a while.</p>
+            </div>
+            <!-- Additional recommendations will dynamically fill in -->
+        </div>
+
+        <div class="new-recommendation-form">
+            <h2>Add a new recommendation</h2>
+            <form id="recommendation-form">
+                <input type="text" id="new-recommendation-title" placeholder="title" required>
+                <textarea id="new-recommendation-text" placeholder="text" required></textarea>
+                <button type="submit">Add a recommendation</button>
+            </form>
+        </div>
+    </div>
+
+    <a href="#" class="home-icon">
+        <div class="circle">
+            <div class="arrow-up"></div>
+        </div>
+    </a>
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close">&times;</span>
+            <p id="popup-message">Thanks for the recommendation!</p>
+            <button id="ok-button">Okay</button>
+        </div>
+    </div>
+
+    <script src="scriptrc.js"></script>
+</body>
+</html>
